@@ -34,24 +34,18 @@ implementation 'com.github.pankaj89:PermissionHelper:2.3'
 #### In Kotlin
 ```kotlin
 permissionHelper = PermissionHelper(this, arrayOf(Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.CALL_PHONE), 100)
-permissionHelper?.denied {
-    if (it) {
-        Log.d(TAG, "Permission denied by system")
-        permissionHelper?.openAppDetailsActivity()
-    } else {
-        Log.d(TAG, "Permission denied")
-    }
-}
-
-//Request all permission
-permissionHelper?.requestAll {
-    Log.d(TAG, "All permission granted")
-}
-
-//Request individual permission
-permissionHelper?.requestIndividual {
-    Log.d(TAG, "Individual Permission Granted")
-}
+permissionHelper.requestAll(
+    requestAllCallback = {
+        Log.d(TAG, "All Permission Granted")
+    },
+    deniedCallback = {isDeniedBySystem->
+        if (isDeniedBySystem) {
+            Log.d(TAG, "onPermissionDeniedBySystem() called")
+            permissionHelper.openAppDetailsActivity()
+        } else {
+            Log.d(TAG, "onPermissionDenied() called")
+        }
+    })
 ```
 
 #### In Java
