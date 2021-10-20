@@ -26,7 +26,7 @@ allprojects {
 ```
 Include the following dependency in your apps level build.gradle file.
 ```
-implementation 'com.github.bhumitbelani:PermissionHelper:2.3'
+implementation 'com.github.bhumitbelani:PermissionHelper:2.4'
 ```
 
 ### How to use
