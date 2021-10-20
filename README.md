@@ -26,7 +26,7 @@ allprojects {
 ```
 Include the following dependency in your apps level build.gradle file.
 ```
-implementation 'com.github.pankaj89:PermissionHelper:2.3'
+implementation 'com.github.bhumitbelani:PermissionHelper:2.3'
 ```
 
 ### How to use
@@ -86,7 +86,7 @@ permissionHelper.request(new PermissionHelper.PermissionCallback() {
 ```
 ### License
 ```
-Copyright 2017 Pankaj Sharma
+Copyright 2017
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
