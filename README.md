@@ -84,12 +84,6 @@ permissionHelper.request(new PermissionHelper.PermissionCallback() {
     }
 }
 ```
-
-### My Other Libraries
-###### Simple Adapter for RecyclerView [(<u><i>link</i></u>)](https://github.com/pankaj89/PermissionHelper)
-###### LocationHelper [(<u><i>link</i></u>)](https://github.com/pankaj89/LocationHelper)
-###### MasterExoPlayer (Play video inside RecyclerView) [(<u><i>link</i></u>)](https://github.com/pankaj89/MasterExoPlayer)
-
 ### License
 ```
 Copyright 2017 Pankaj Sharma
